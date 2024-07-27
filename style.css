@@ -59,8 +59,22 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 100%;
+    border: none;
+  }
+  .title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
   }
   #main-doc {
     margin: 30px;
+  }
+  .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
