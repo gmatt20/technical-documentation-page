@@ -20,9 +20,10 @@ html {
   height: 100%;
   max-width: 70%;
 }
-.link {
+.nav-link, .link{
   text-decoration: none;
-  color: #fff;
+  color: orange;
+  font-weight: 700;
 }
 .title {
   padding: 15px 30px 15px 30px;
@@ -41,13 +42,25 @@ html {
 
 /* Main Document */
 
+.card{
+background-color: #00171f;
+  border-radius: 10px;
+}
 #main-doc {
   margin: 0 0 0 260px;
-  padding: 15px 30px 15px 30px;
-  padding: 15px 50px 15px 50px;
+  padding: 15px 100px 15px 100px;
+}
+.main-section{
+  padding: 15px;
 }
 .content-section {
   margin: 15px;
+}
+main > section > section > header{
+  color: orange;
+} 
+h3{
+  color: #00ab6b;
 }
 
 /* Phone Screen Breakpoint */
@@ -69,12 +82,16 @@ html {
     justify-content: center;
     gap: 7px;
   }
-  #main-doc {
-    margin: 30px;
-  }
-  .nav-link {
+  .nav-link{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
+  }
+  .border{
+    width: 100vw;
+  }
+  #main-doc {
+    margin: 30px;
+    padding: 0;
   }
 }
