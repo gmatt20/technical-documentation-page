@@ -28,6 +28,10 @@ html {
 .title {
   padding: 15px 30px 15px 30px;
 }
+.title-link{
+  text-decoration: none;
+  color: #e8e8e8;
+}
 .nav-list {
   list-style: none;
   width: 100%;
@@ -51,7 +55,10 @@ background-color: #00171f;
   padding: 15px 100px 15px 100px;
 }
 .main-section{
-  padding: 15px;
+  padding: 15px 30px 15px 30px;
+}
+.main-header-section-title{
+  font-size: 30px;
 }
 .content-section {
   margin: 15px;
