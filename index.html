@@ -84,7 +84,7 @@
               >&lt;Start Tag Attribute = "Value"&gt;Content&lt;/End
               Tag&gt;</code
             >
-            <h2>Block-Level Semantic HTML Elements:</h2>
+            <h3>Block-Level Semantic HTML Elements:</h3>
             <code>&lt;header&gt;</code>
             <p class="element-description">
               Represents introductory content, such as navigational aids, logo,
@@ -131,7 +131,7 @@
 
             <br />
 
-            <h2>Inline Semantic HTML Elements:</h2>
+            <h3>Inline Semantic HTML Elements:</h3>
             <code>&lt;a&gt;</code>
             <code>&lt;strong&gt;</code>
             <code>&lt;em&gt;</code>
@@ -146,7 +146,7 @@
             <code>&lt;b&gt;</code>
 
             <br />
-            <h2>Non-Semantic HTML Elements:</h2>
+            <h3>Non-Semantic HTML Elements:</h3>
             <code>&lt;div&gt;</code>
             <p class="element-description">Block-level element.</p>
             <code>&lt;span&gt;</code>
@@ -159,7 +159,7 @@
         <section class="main-section" id="CSS">
           <header class="main-header-section-title"><h1>CSS</h1></header>
           <article class="content-section">
-            <h2>Displays</h2>
+            <h3>Displays</h3>
             <p>
               The default page behavior is normal flow. Meaning that the page
               always starts out with either as blocks or inlines. The mindset
@@ -188,7 +188,7 @@
             <br />
             <p>Now, here are the other displays:</p>
             <br />
-            <h3>Flex</h3>
+            <h3><a class="link flex-link" href="https://yoksel.github.io/flex-cheatsheet/" target="_blank">Flex</a></h3>
             <p>
               The flex property is used to create a flexible layout, which
               allows a natural responsive web design. Think of a flex container
@@ -237,41 +237,144 @@
             <h3>None</h3>
             <p>The element disappears.</p>
             <br />
-            <h2>Basic Styling</h2>
-            <pre>
-    <code>
-    .box {
-      background: url();
-      background-image: url();
-      background-color: black;
-      border: 5px solid red
-      border-radius: 5px;
-      border-color: red;
-      color: black;
-    }
-    </code>
-    </pre>
             <br />
             <h2>Box Model</h2>
             <p>
               The CSS box model describes the rectangular boxes that are
-              generated for elements in the document tree and laid out according
-              to the visual formatting model.
+              generated for elements in the document tree and laid out
+              according. to the visual formatting model.
             </p>
-            <pre>
-    <code>
-    .box {
-        width: 100px;
-        height: 100px;
-        margin: 10px;
-        padding: 20px;
-        border: 2px solid black;
-        box-sizing: border-box;
-    }
-    </code>
-    </pre>
-            <code></code>
-            <li></li>
+            <br />
+            <p>
+              The content box contains the actual content. Size it using
+              inline-size and block-size, or:
+            </p>
+            <code>width</code>
+            <code>height</code>
+            <p>The padding box is the area around the content pox.</p>
+            <code>padding</code>
+            <p>The border box wraps the content and padding.</p>
+            <code>border</code>
+            <p>
+              The margin box is the outermost layer which wraps the border,
+              padding, and content.
+            </p>
+            <code>margin</code>
+            <br />
+            <p>
+              One more thing, in normal flow, the page uses content-box
+              box-sizing. Content-box defines how the width and height of an
+              element are calculated: should they include padding and borders,
+              or not. The width and height you set on an element apply only to
+              the content box. Padding, border, and margin are added outside of
+              the content box.
+            </p>
+            <br />
+            <p>
+              The border-box model includes padding and border in the element's
+              width and height. The width and height you set on an element
+              include the content, padding, and border. Only the margin is
+              added outside of this total width and height.
+            </p>
+            <br>
+            <p>Always set border-box globally.</p>
+            <br />
+            <h2>Responsive Design</h2>
+            <p>
+              Responsive web design makes web pages render well on a variety of
+              devices and window or screen sizes.
+            </p>
+            <br />
+            <p>
+              Use flexible units (%, vh, vw, em, rem) for more responsiveness
+              rather than using absolute units.
+            </p>
+            <br />
+            <p>Extra small devices (600px and down)</p>
+            <code> @media only screen and (max-width: 600px) {...} </code>
+            <p>Small devices (600px and up)</p>
+            <code> @media only screen and (min-width: 600px) {...} </code>
+            <p>Medium devices (768px and up)</p>
+            <code> @media only screen and (min-width: 768px) {...} </code>
+            <p>Large devices (992px and up) (768px and up)</p>
+            <code> @media only screen and (min-width: 992px) {...} </code>
+            <p>Extra large devices (1200px and up)</p>
+            <code> @media only screen and (min-width: 1200px) {...} </code>
+            <br />
+            <br />
+            <h2>Selectors</h2>
+            <p>
+              Selectors are used to target specific elements in the HTML to
+              style. Selectors can target elements, classes, and IDs.
+            </p>
+            <br />
+            <p>Here are 2 more advanced selectors:</p>
+            <br />
+            <p>
+              ::after inserts something after the content of each selected
+              element.
+            </p>
+            <code>::after</code>
+            <br />
+            <p>
+              ::before inserts something before the content of each selected
+              element.
+            </p>
+            <code>::before</code>
+            <br />
+            <p>
+              These 2 selectors are paired with content: " "; to insert any
+              content. Further, you can style the content like any normal
+              element.
+            </p>
+            <br />
+            <p>
+              These 2 selectors great for adding more decorations (icons before
+              or after a element without needing another element for it), adding
+              quotes, displaying custom list bullets, create tooltips, etc.
+            </p>
+            <br />
+            <p>
+              There are also pseudo classes which is used to define a special
+              state of an element. Here are user action pseudo-classes:
+            </p>
+            <br />
+            <p>:hover activates when the mouse pointer points over the item.</p>
+            <code>:hover</code>
+            <br />
+            <p>
+              :active activates when an item is being activated by the user. For
+              example, when the item is clicked on.
+            </p>
+            <code>:active</code>
+            <br />
+            <p>Next, here are functional pseudo-classes:</p>
+            <br />
+            <p>
+              The matches-any pseudo-class matches any element that matches any
+              of the selectors in the list provided.
+            </p>
+            <code>:is()</code>
+            <br />
+            <p>
+              The negation, or matches-none, pseudo-class represents any element
+              that is not represented by its argument.
+            </p>
+            <code>:not()</code>
+            <br />
+            <p>Finally, here are tree-structural pseudo-classes:</p>
+            <br />
+            <p>
+              Represents an element that is the root of the document. In HTML
+              this is usually the &lt;html&gt; element.
+            </p>
+            <code>:root</code>
+            <br />
+            <p>Matches an element that is the first of its siblings.</p>
+            <code>:first-child</code>
+            <br />
+            <p>Matches an element that is the last of its siblings.</p>
+            <code>:last-child</code>
           </article>
         </section>
 
