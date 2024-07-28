@@ -10,9 +10,10 @@
   <body>
     <!-- Navbar -->
     <nav id="navbar">
-      <header class="title"><a class="title-link"  href="#top">
-        <h1>HTML and CSS</h1>
-        <h1>Documentation</h1>
+      <header class="title">
+        <a class="title-link" href="#top">
+          <h1>HTML and CSS</h1>
+          <h1>Documentation</h1>
         </a>
       </header>
       <ul class="list">
@@ -26,6 +27,7 @@
         </li>
         <li class="border"><a class="nav-link" href="#HTML">HTML</a></li>
         <li class="border"><a class="nav-link" href="#CSS">CSS</a></li>
+        <li class="border"><a class="nav-link" href="#JavaScript">JavaScript</a></li>
         <li class="border border-bottom">
           <a class="nav-link" href="#Bookmarks">Bookmarks</a>
         </li>
@@ -36,7 +38,9 @@
       <!-- Section 1 -->
       <section class="card">
         <section class="main-section" id="Introduction">
-          <header class="main-header-section-title"><h1>Introduction</h1></header>
+          <header class="main-header-section-title">
+            <h1>Introduction</h1>
+          </header>
           <article class="content-section">
             <p>
               In today's digital age, the internet stands at the forefront of
@@ -149,7 +153,9 @@
         </section>
         <!-- Section 2 -->
         <section class="main-section" id="Prerequisite_Knowledge">
-          <header class="main-header-section-title"><h1>Prerequisite Knowledge</h1></header>
+          <header class="main-header-section-title">
+            <h1>Prerequisite Knowledge</h1>
+          </header>
           <article class="content-section">
             <p>
               Before diving into HTML and CSS, it's helpful to have a basic
@@ -255,7 +261,7 @@
               behaviors. Within the element is the actual content, where you can
               put text.
             </p>
-            <br>
+            <br />
             <li></li>
           </article>
         </section>
@@ -266,6 +272,97 @@
             <p></p>
             <code></code>
             <li></li>
+          </article>
+        </section>
+        <section class="main-section" id="JavaScript">
+          <header class="main-header-section-title"><h1>JavaScript</h1></header>
+          <article class="content-section">
+            <p></p>
+            <code></code>
+            <li></li>
+            <h1>JavaScript Skills Documentation</h1>
+
+            <h2>1. Numbers and Math</h2>
+            <p>Basic arithmetic operations and using mathematical functions.</p>
+            <code>let sum = 10 + 5; // 15</code>
+            <code>let product = 10 * 5; // 50</code>
+            <code>let squareRoot = Math.sqrt(16); // 4</code>
+
+            <h2>2. Strings</h2>
+            <p>Creating and manipulating strings using various methods.</p>
+            <code>let greeting = "Hello, " + "World!"; // "Hello, World!"</code>
+            <code>let upper = "hello".toUpperCase(); // "HELLO"</code>
+            <code>let lower = "hello".toLowerCase(); // "hello"</code>
+            <code>let template = `Hello, ${name}!`; // Template Literal</code>
+
+            <h2>3. console.log</h2>
+            <p>Outputting information to the browser console for debugging.</p>
+            <code>console.log("Hello, World!");</code>
+
+            <h2>4. Variables</h2>
+            <p>Declaring variables using var, let, and const.</p>
+            <code>var x = 10;</code>
+            <code>let y = 20;</code>
+            <code>const z = 30;</code>
+
+            <h2>5. Booleans and If-Statements</h2>
+            <p>Using boolean values and conditional statements.</p>
+            <code>let isTrue = true;</code>
+            <code>
+              if (isTrue) { 
+                console.log("It's true!"); 
+              } else {
+              console.log("It's false!"); }
+              </code>
+
+            <h2>6. Functions</h2>
+            <p>Defining and calling functions.</p>
+            <code>
+              function greet(name) { return `Hello, ${name}!`; }
+              console.log(greet("Alice"));
+            </code>
+
+            <h2>7. Objects</h2>
+            <p>Creating and manipulating objects.</p>
+            <code>
+              let person = { name: "John", age: 30, greet: function() {
+              console.log(`Hello, my name is ${this.name}`); } };
+              person.greet();
+            </code>
+
+            <h2>8. Document Object Model (DOM)</h2>
+            <p>Selecting and manipulating DOM elements.</p>
+            <code>
+              // Selecting an element const element =
+              document.querySelector('.my-element'); // Changing content
+              element.textContent = "New Content"; // Adding a class
+              element.classList.add('new-class'); // Event handling
+              element.addEventListener('click', function() {
+              console.log('Element clicked!'); });
+            </code>
+
+            <h2>9. Loops</h2>
+            <p>Using for, while, and do...while loops to iterate over data.</p>
+            <code> for (let i = 0; i < 5; i++) { console.log(i); } </code>
+
+            <h2>10. Arrays</h2>
+            <p>Creating and manipulating arrays using various methods.</p>
+            <code>
+              let fruits = ["apple", "banana", "cherry"]; fruits.push("date");
+              console.log(fruits); // ["apple", "banana", "cherry", "date"]
+            </code>
+
+            <h2>11. JSON and Local Storage</h2>
+            <p>
+              Understanding and using JSON, and storing and retrieving data
+              using localStorage.
+            </p>
+            <code>
+              // JSON let jsonString = JSON.stringify({ name: "Alice", age: 25
+              }); let jsonObject = JSON.parse(jsonString); // localStorage
+              localStorage.setItem('user', jsonString); let storedUser =
+              localStorage.getItem('user'); console.log(JSON.parse(storedUser));
+            </code>
           </article>
         </section>
         <!-- Section 5 -->
@@ -344,7 +441,7 @@
                 >UI Verse</a
               >
             </li>
-                <li>
+            <li>
               <a target="_blank" class="link" href="https://www.curated.design/"
                 >Curated.design</a
               >
@@ -372,7 +469,7 @@
                 >Theme-UI</a
               >
             </li>
-            <br>
+            <br />
             <h3>CSS Tips and Tricks</h3>
             <li>
               <a target="_blank" class="link" href="https://flexboxfroggy.com/"
@@ -421,13 +518,13 @@
                 >Keyframes</a
               >
             </li>
-          
+
             <li>
               <a target="_blank" class="link" href="https://defensivecss.dev/"
                 >Defensive CSS</a
               >
             </li>
-        
+
             <li>
               <a target="_blank" class="link" href="https://fonts.google.com/"
                 >Google Fonts</a

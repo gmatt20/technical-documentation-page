@@ -21,7 +21,8 @@ html {
   height: 100%;
   max-width: 70%;
 }
-.nav-link, .link{
+.nav-link,
+.link {
   text-decoration: none;
   color: orange;
   font-weight: 700;
@@ -29,7 +30,7 @@ html {
 .title {
   padding: 15px 30px 15px 30px;
 }
-.title-link{
+.title-link {
   text-decoration: none;
   color: #e8e8e8;
 }
@@ -47,32 +48,39 @@ html {
 
 /* Main Document */
 
-.card{
-background-color: #00171f;
+.card {
+  background-color: #00171f;
   border-radius: 10px;
 }
 #main-doc {
   margin: 0 0 0 260px;
   padding: 30px;
 }
-.main-section{
+.main-section {
   padding: 15px 30px 15px 30px;
 }
-.main-header-section-title{
+.main-header-section-title {
   font-size: 30px;
 }
 .content-section {
   margin: 15px;
 }
-main > section > section > header{
+main > section > section > header {
   color: orange;
-} 
-h3{
+}
+h3 {
   color: #00ab6b;
 }
-.link{
+.link {
   color: white;
   line-height: 50px;
+}
+code {
+  background-color: #333;
+  padding: 5px;
+  border-radius: 5px;
+  display: block;
+  margin: 10px 0;
 }
 
 /* Phone Screen Breakpoint */
@@ -94,12 +102,12 @@ h3{
     justify-content: center;
     gap: 7px;
   }
-  .nav-link{
+  .nav-link {
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
   }
-  .border{
+  .border {
     width: 100vw;
   }
   #main-doc {
