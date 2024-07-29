@@ -6,11 +6,16 @@
   margin: 0;
   box-sizing: border-box;
 }
-html {
+body{
   font-family: "Poppins", sans-serif;
   background-color: #1f2a38;
   color: #e8e8e8;
   scroll-behavior: smooth;
+}
+.light-mode{
+  background-color: #e8e8e8;
+  color: #1f2a38;
+  text-decoration: none;
 }
 
 /* Nav Section */
@@ -44,6 +49,15 @@ html {
 }
 .border-bottom {
   border-bottom: 1px solid #e8e8e8;
+}
+.light-mode-icon{
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.light-mode:hover{
+  cursor: pointer;
 }
 
 /* Main Document */
