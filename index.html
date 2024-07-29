@@ -398,8 +398,8 @@
             <code>let x = 10 / 5; // 2</code>
             <code>let x = Math.sqrt(16); // 4</code>
 
-            <br>
-            <br>
+            <br />
+            <br />
             <h2>2. Strings</h2>
             <p>Creating and manipulating strings using various methods.</p>
             <code>let greeting = "Hello, " + "World!"; // "Hello, World!"</code>
@@ -407,22 +407,22 @@
             <code>let lower = "hello".toLowerCase(); // "hello"</code>
             <code>let template = `Hello, ${name}!`; // Template Literal</code>
 
-            <br>
-            <br>
+            <br />
+            <br />
             <h2>3. console.log</h2>
             <p>Outputting information to the browser console for debugging.</p>
             <code>console.log("Hello, World!");</code>
 
-            <br>
-            <br>
+            <br />
+            <br />
             <h2>4. Variables</h2>
             <p>Declaring variables using var, let, and const.</p>
             <code>var x = 10;</code>
             <code>let y = 20;</code>
             <code>const z = 30;</code>
 
-            <br>
-            <br>
+            <br />
+            <br />
             <h2>5. Booleans and If-Statements</h2>
             <p>Using boolean values and conditional statements.</p>
             <code>let isTrue = true;</code>
@@ -431,8 +431,8 @@
               console.log("It's false!"); }
             </code>
 
-            <br>
-            <br>
+            <br />
+            <br />
             <h2>6. Functions</h2>
             <p>Defining and calling functions.</p>
             <code>
@@ -440,8 +440,8 @@
               console.log(greet("Alice"));
             </code>
 
-            <br>
-            <br>
+            <br />
+            <br />
             <h2>7. Objects</h2>
             <p>Creating and manipulating objects.</p>
             <code>
@@ -450,27 +450,64 @@
               person.greet();
             </code>
 
-            <br>
-            <br>
+            <br />
+            <br />
             <h2>8. Document Object Model (DOM)</h2>
             <p>Selecting and manipulating DOM elements.</p>
-            <code>
-              // Selecting an element const element =
-              document.querySelector('.my-element'); // Changing content
-              element.textContent = "New Content"; // Adding a class
-              element.classList.add('new-class'); // Event handling
-              element.addEventListener('click', function() {
-              console.log('Element clicked!'); });
-            </code>
-
-            <br>
-            <br>
+            <br />
+            <p>Selecting an element</p>
+            <code>const element = document.querySelector('.my-element');</code>
+            <br />
+            <p>Selecting an ID</p>
+            <code>const element = document.getElementById("id");</code>
+            <br />
+            <p>innerHTML</p>
+            <code
+              >const element = document.querySelector('.class').innerHTML;</code
+            >
+            <br />
+            <p>Changing content</p>
+            <code
+              >const element = document.querySelector('.class').innerHTML = "new
+              content";</code
+            >
+            <br />
+            <p>Adding a class</p>
+            <code>element.classList.add('new-class');</code>
+            <br />
+            <p>Event Handling</p>
+            <code
+              >element.addEventListener('click', function() {
+              console.log('Element clicked!'); });</code
+            >
+            <br />
+            <p>
+              JS has a unique feature that can react to events. Like when a user
+              clicks on an HTML element, JS will execute some code. onclick = ""
+              is the most common example of this. Here are more:
+            </p>
+            <br />
+            <code>onmouseover = ""</code>
+            <code>onmouseout = ""</code>
+            <code>onmousedown = ""</code>
+            <code>onmouseup = ""</code>
+            <code>onmousemove = ""</code>
+            <code>onmousemove = ""</code>
+            <code>onkeydown = ""</code>
+            <code>onkeypress = ""</code>
+            <br />
+            <p>
+              Rather than always having to rely on HTML attributes, JS can also
+              do the same within the JS code. JS can do this by using the:
+              <code>.addEventListener("event", function, useCapture);</code>
+            </p>
+            <br />
             <h2>9. Loops</h2>
             <p>Using for, while, and do...while loops to iterate over data.</p>
             <code> for (let i = 0; i &lt; 5; i++) { console.log(i); } </code>
 
-            <br>
-            <br>
+            <br />
+            <br />
             <h2>10. Arrays</h2>
             <p>Creating and manipulating arrays using various methods.</p>
             <code>
@@ -478,19 +515,17 @@
               console.log(fruits); // ["apple", "banana", "cherry", "date"]
             </code>
 
-            <br>
-            <br>
+            <br />
+            <br />
             <h2>11. JSON and Local Storage</h2>
             <p>
-              Understanding and using JSON, and storing and retrieving data
-              using localStorage.
+              Understand storing and retrieving data using localStorage.
+              <strong>Save data to local storage by:</strong>
             </p>
-            <code>
-              // JSON let jsonString = JSON.stringify({ name: "Alice", age: 25
-              }); let jsonObject = JSON.parse(jsonString); // localStorage
-              localStorage.setItem('user', jsonString); let storedUser =
-              localStorage.getItem('user'); console.log(JSON.parse(storedUser));
-            </code>
+            <code> localStorage.setItem('key', value); </code>
+            <br />
+            <p><strong>Read data from local storage:</strong></p>
+            <code>let lastname = localStorage.getItem(key);</code>
           </article>
         </section>
 
