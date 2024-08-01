@@ -6,16 +6,34 @@
   margin: 0;
   box-sizing: border-box;
 }
-body{
+body {
   font-family: "Poppins", sans-serif;
   background-color: #1f2a38;
   color: #e8e8e8;
   scroll-behavior: smooth;
+  transition: 0.2s;
 }
-.light-mode{
-  background-color: #e8e8e8;
+.light-mode-background {
+  background-color: #f8f8f8;
+}
+.light-mode {
   color: #1f2a38;
   text-decoration: none;
+}
+.nav-link-light-mode {
+  color: #1f2a38;
+  text-decoration: none;
+  font-weight: 700;
+}
+.border-light-mode {
+  border-color: #1f2a38 !important;
+}
+.card-light-mode {
+  background-color: #dcdcdc;
+  border-radius: 10px;
+}
+.title-light-mode {
+  color: #1f2a38;
 }
 
 /* Nav Section */
@@ -50,13 +68,16 @@ body{
 .border-bottom {
   border-bottom: 1px solid #e8e8e8;
 }
-.light-mode-icon{
+.mode-icon {
+  width: 50px;
   margin-top: 15px;
+}
+.mode-icon-div {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.light-mode:hover{
+.mode-icon-div:hover {
   cursor: pointer;
 }
 
@@ -90,15 +111,15 @@ h3 {
   color: white;
   line-height: 50px;
 }
-.flex-link{
+.flex-link {
   color: #00ab6b;
 }
-.flex-link:hover{
+.flex-link:hover {
   transition: 0.5s ease;
   color: #ffffff;
   text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
-  box-shadow: 0 0 5px #003d26, 0 0 20px #003d26, 0 0 50px #003d26
-    0 0 100px #003d26;
+  box-shadow: 0 0 5px #003d26, 0 0 20px #003d26,
+    0 0 50px #003d26 0 0 100px #003d26;
 }
 code {
   background-color: #333;

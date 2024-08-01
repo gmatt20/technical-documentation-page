@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon_io/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon_io/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="./favicon_io/site.webmanifest" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Technical Documentation Page | HTML and CSS</title>
+  </head>
+  <body class="js-body">
+    <!-- Navbar -->
+
+    <nav id="navbar">
+      <header class="title">
+        <a id="title" class="title-link js-title" href="./index.html">
+          <h1>HTML, CSS, and JS</h1>
+          <h1>Documentation</h1>
+        </a>
+      </header>
+      <ul class="list">
+        <li class="border">
+          <a class="nav-link" href="#Introduction">Introduction</a>
+        </li>
+        <li class="border"><a class="nav-link" href="./html-info.html">HTML</a></li>
+        <li class="border"><a class="nav-link" href="./css-info.html">CSS</a></li>
+        <li class="border">
+          <a class="nav-link" href="./js-info.html">JavaScript</a>
+        </li>
+        <li class="border border-bottom">
+          <a class="nav-link" href="./bookmarks.html">Bookmarks</a>
+        </li>
+      </ul>
+      <div class="mode-icon-div">
+        <img 
+          src="./images/brightness.png"
+          alt="Brightness icon"
+          class="js-light-mode-icon mode-icon"/>
+      </div>
+    </nav>
+
+    <!-- Main Document -->
+
+    <main id="main-doc">
+      <section class="card js-card">
+        <!-- Section 1 -->
+
+        <section class="main-section" id="CSS">
+          <header class="main-header-section-title js-section-title"><h1>CSS</h1></header>
+          <article class="content-section">
+            <h3>Displays</h3>
+            <p>
+              The default page behavior is normal flow. Meaning that the page
+              always starts out with either as blocks or inlines. The mindset
+              when it comes to making websites it is that we should work with
+              the normal flow, rather than struggling against it (Kevin Powell).
+            </p>
+            <br />
+            <p>
+              It is crucial to understand the basics; inline elements and block
+              elements.
+            </p>
+            <br />
+            <h3>Inline Elements</h3>
+            <p>
+              Inline elements only use as much horizontal space as their content
+              requires. Therefore, inline elements are not greedy. Inline
+              elements do not start on a new line.
+            </p>
+            <br />
+            <h3>Block Elements</h3>
+            <p>
+              Block elements takes up the entire horizontal space it is allowed
+              to get. Therefore, block elements not greedy and will take the
+              full width of the screen. Block elements start on a new line.
+            </p>
+            <br />
+            <p>Now, here are the other displays:</p>
+            <br />
+            <h3>
+              <a
+                class="link flex-link"
+                href="https://yoksel.github.io/flex-cheatsheet/"
+                target="_blank"
+                >Flex</a
+              >
+            </h3>
+            <p>
+              The flex property is used to create a flexible layout, which
+              allows a natural responsive web design. Think of a flex container
+              like a row or column of blocks that you can easily move around,
+              resize, and align in different ways. This makes creating complex
+              layouts much easier compared to traditional methods.
+            </p>
+            <br />
+            <h3>Inline-Block</h3>
+            <p>
+              The inline-block property allows an element to behave like an
+              inline element while still retaining block element
+              characteristics. They are laid out in a line, just like inline
+              elements. They respect whitespace in the HTML, meaning spaces,
+              tabs, and line breaks between inline-block elements in the source
+              code will affect the rendered output.
+            </p>
+            <br />
+            <p>
+              Unlike purely inline elements, inline-block elements can have
+              width and height set. They can have padding, margins, and borders
+              applied, which will affect the layout just as with block elements.
+            </p>
+            <br />
+            <p>
+              You can place multiple inline-block elements next to each other on
+              the same line, making it useful for creating layouts like
+              navigation bars, buttons, or image galleries without the need for
+              floats. It is useful for creating responsive layouts without using
+              floats or flexbox/grid.
+            </p>
+            <br />
+            <h3>Grid</h3>
+            <p>
+              The grid property displays an element as a block-level grid
+              container. The Grid Layout is a two-dimensional layout system,
+              meaning it can handle both rows and columns. It allows you to
+              define a grid structure and place items into this grid, providing
+              more control over the alignment and spacing of elements compared
+              to traditional layout methods like floats or flexbox.
+            </p>
+            <br />
+            <h3>Inherit</h3>
+            <p>Inherits this property from its parent element.</p>
+            <br />
+            <h3>None</h3>
+            <p>The element disappears.</p>
+            <br />
+            <br />
+            <h2>Box Model</h2>
+            <p>
+              The CSS box model describes the rectangular boxes that are
+              generated for elements in the document tree and laid out
+              according. to the visual formatting model.
+            </p>
+            <br />
+            <p>
+              The content box contains the actual content. Size it using
+              inline-size and block-size, or:
+            </p>
+            <code>width</code>
+            <code>height</code>
+            <p>The padding box is the area around the content pox.</p>
+            <code>padding</code>
+            <p>The border box wraps the content and padding.</p>
+            <code>border</code>
+            <p>
+              The margin box is the outermost layer which wraps the border,
+              padding, and content.
+            </p>
+            <code>margin</code>
+            <br />
+            <p>
+              One more thing, in normal flow, the page uses content-box
+              box-sizing. Content-box defines how the width and height of an
+              element are calculated: should they include padding and borders,
+              or not. The width and height you set on an element apply only to
+              the content box. Padding, border, and margin are added outside of
+              the content box.
+            </p>
+            <br />
+            <p>
+              The border-box model includes padding and border in the element's
+              width and height. The width and height you set on an element
+              include the content, padding, and border. Only the margin is added
+              outside of this total width and height.
+            </p>
+            <br />
+            <p>Always set border-box globally.</p>
+            <br />
+            <h2>Responsive Design</h2>
+            <p>
+              Responsive web design makes web pages render well on a variety of
+              devices and window or screen sizes.
+            </p>
+            <br />
+            <p>
+              Use flexible units (%, vh, vw, em, rem) for more responsiveness
+              rather than using absolute units.
+            </p>
+            <br />
+            <p>Extra small devices (600px and down)</p>
+            <code> @media only screen and (max-width: 600px) {...} </code>
+            <p>Small devices (600px and up)</p>
+            <code> @media only screen and (min-width: 600px) {...} </code>
+            <p>Medium devices (768px and up)</p>
+            <code> @media only screen and (min-width: 768px) {...} </code>
+            <p>Large devices (992px and up) (768px and up)</p>
+            <code> @media only screen and (min-width: 992px) {...} </code>
+            <p>Extra large devices (1200px and up)</p>
+            <code> @media only screen and (min-width: 1200px) {...} </code>
+            <br />
+            <br />
+            <h2>Selectors</h2>
+            <p>
+              Selectors are used to target specific elements in the HTML to
+              style. Selectors can target elements, classes, and IDs.
+            </p>
+            <br />
+            <p>Here are 2 more advanced selectors:</p>
+            <br />
+            <p>
+              ::after inserts something after the content of each selected
+              element.
+            </p>
+            <code>::after</code>
+            <br />
+            <p>
+              ::before inserts something before the content of each selected
+              element.
+            </p>
+            <code>::before</code>
+            <br />
+            <p>
+              These 2 selectors are paired with content: " "; to insert any
+              content. Further, you can style the content like any normal
+              element.
+            </p>
+            <br />
+            <p>
+              These 2 selectors great for adding more decorations (icons before
+              or after a element without needing another element for it), adding
+              quotes, displaying custom list bullets, create tooltips, etc.
+            </p>
+            <br />
+            <p>
+              There are also pseudo classes which is used to define a special
+              state of an element. Here are user action pseudo-classes:
+            </p>
+            <br />
+            <p>:hover activates when the mouse pointer points over the item.</p>
+            <code>:hover</code>
+            <br />
+            <p>
+              :active activates when an item is being activated by the user. For
+              example, when the item is clicked on.
+            </p>
+            <code>:active</code>
+            <br />
+            <p>Next, here are functional pseudo-classes:</p>
+            <br />
+            <p>
+              The matches-any pseudo-class matches any element that matches any
+              of the selectors in the list provided.
+            </p>
+            <code>:is()</code>
+            <br />
+            <p>
+              The negation, or matches-none, pseudo-class represents any element
+              that is not represented by its argument.
+            </p>
+            <code>:not()</code>
+            <br />
+            <p>Finally, here are tree-structural pseudo-classes:</p>
+            <br />
+            <p>
+              Represents an element that is the root of the document. In HTML
+              this is usually the &lt;html&gt; element.
+            </p>
+            <code>:root</code>
+            <br />
+            <p>Matches an element that is the first of its siblings.</p>
+            <code>:first-child</code>
+            <br />
+            <p>Matches an element that is the last of its siblings.</p>
+            <code>:last-child</code>
+          </article>
+        </section>
+
+      </section>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>

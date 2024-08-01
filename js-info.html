@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon_io/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon_io/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="./favicon_io/site.webmanifest" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Technical Documentation Page | HTML and CSS</title>
+  </head>
+  <body class="js-body">
+    <!-- Navbar -->
+
+    <nav id="navbar">
+      <header class="title">
+        <a id="title" class="title-link js-title" href="./index.html">
+          <h1>HTML, CSS, and JS</h1>
+          <h1>Documentation</h1>
+        </a>
+      </header>
+      <ul class="list">
+        <li class="border">
+          <a class="nav-link" href="./index.html">Introduction</a>
+        </li>
+        <li class="border"><a class="nav-link" href="./html-info.html">HTML</a></li>
+        <li class="border"><a class="nav-link" href="./css-info.html">CSS</a></li>
+        <li class="border">
+          <a class="nav-link" href="./js-info.html">JavaScript</a>
+        </li>
+        <li class="border border-bottom">
+          <a class="nav-link" href="./bookmarks.html">Bookmarks</a>
+        </li>
+      </ul>
+      <div class="mode-icon-div">
+        <img 
+          src="./images/brightness.png"
+          alt="Brightness icon"
+          class="js-light-mode-icon mode-icon"/>
+      </div>
+    </nav>
+
+    <!-- Main Document -->
+
+    <main id="main-doc">
+      <section class="card js-card">
+
+        <section class="main-section" id="JavaScript">
+          <header class="main-header-section-title js-section-title"><h1>JavaScript</h1></header>
+          <article class="content-section">
+            <h2>1. Numbers and Math</h2>
+            <p>Basic arithmetic operations and using mathematical functions.</p>
+            <code>let x = 10 + 5; // 15</code>
+            <code>let X-UA-Compatible = 10 - 5; // 5</code>
+            <code>let x = 10 * 5; // 50</code>
+            <code>let x = 10 / 5; // 2</code>
+            <code>let x = Math.sqrt(16); // 4</code>
+
+            <br />
+            <br />
+            <h2>2. Strings</h2>
+            <p>Creating and manipulating strings using various methods.</p>
+            <code>let greeting = "Hello, " + "World!"; // "Hello, World!"</code>
+            <code>let upper = "hello".toUpperCase(); // "HELLO"</code>
+            <code>let lower = "hello".toLowerCase(); // "hello"</code>
+            <code>let template = `Hello, ${name}!`; // Template Literal</code>
+
+            <br />
+            <br />
+            <h2>3. console.log</h2>
+            <p>Outputting information to the browser console for debugging.</p>
+            <code>console.log("Hello, World!");</code>
+
+            <br />
+            <br />
+            <h2>4. Variables</h2>
+            <p>Declaring variables using var, let, and const.</p>
+            <code>var x = 10;</code>
+            <code>let y = 20;</code>
+            <code>const z = 30;</code>
+
+            <br />
+            <br />
+            <h2>5. Booleans and If-Statements</h2>
+            <p>Using boolean values and conditional statements.</p>
+            <code>let isTrue = true;</code>
+            <code>
+              if (isTrue) { console.log("It's true!"); } else {
+              console.log("It's false!"); }
+            </code>
+
+            <br />
+            <br />
+            <h2>6. Functions</h2>
+            <p>Defining and calling functions.</p>
+            <code>
+              function greet(name) { return `Hello, ${name}!`; }
+              console.log(greet("Alice"));
+            </code>
+
+            <br />
+            <br />
+            <h2>7. Objects</h2>
+            <p>Creating and manipulating objects.</p>
+            <code>
+              let person = { name: "John", age: 30, greet: function() {
+              console.log(`Hello, my name is ${this.name}`); } };
+              person.greet();
+            </code>
+
+            <br />
+            <br />
+            <h2>8. Document Object Model (DOM)</h2>
+            <p>Selecting and manipulating DOM elements.</p>
+            <br />
+            <p>Selecting an element</p>
+            <code>const element = document.querySelector('.my-element');</code>
+            <br />
+            <p>Selecting an ID</p>
+            <code>const element = document.getElementById("id");</code>
+            <br />
+            <p>innerHTML</p>
+            <code
+              >const element = document.querySelector('.class').innerHTML;</code
+            >
+            <br />
+            <p>Changing content</p>
+            <code
+              >const element = document.querySelector('.class').innerHTML = "new
+              content";</code
+            >
+            <br />
+            <p>Adding a class</p>
+            <code>element.classList.add('new-class');</code>
+            <br />
+            <p>Event Handling</p>
+            <code
+              >element.addEventListener('click', function() {
+              console.log('Element clicked!'); });</code
+            >
+            <br />
+            <p>
+              JS has a unique feature that can react to events. Like when a user
+              clicks on an HTML element, JS will execute some code. onclick = ""
+              is the most common example of this. Here are more:
+            </p>
+            <br />
+            <code>onmouseover = ""</code>
+            <code>onmouseout = ""</code>
+            <code>onmousedown = ""</code>
+            <code>onmouseup = ""</code>
+            <code>onmousemove = ""</code>
+            <code>onmousemove = ""</code>
+            <code>onkeydown = ""</code>
+            <code>onkeypress = ""</code>
+            <br />
+            <p>
+              Rather than always having to rely on HTML attributes, JS can also
+              do the same within the JS code. JS can do this by using the:
+              <code>.addEventListener("event", function, useCapture);</code>
+            </p>
+            <br />
+            <h2>9. Loops</h2>
+            <p>Using for, while, and do...while loops to iterate over data.</p>
+            <code> for (let i = 0; i &lt; 5; i++) { console.log(i); } </code>
+
+            <br />
+            <br />
+            <h2>10. Arrays</h2>
+            <p>Creating and manipulating arrays using various methods.</p>
+            <code>
+              let fruits = ["apple", "banana", "cherry"]; fruits.push("date");
+              console.log(fruits); // ["apple", "banana", "cherry", "date"]
+            </code>
+
+            <br />
+            <br />
+            <h2>11. JSON and Local Storage</h2>
+            <p>
+              Understand storing and retrieving data using localStorage.
+              <strong>Save data to local storage by:</strong>
+            </p>
+            <code> localStorage.setItem('key', value); </code>
+            <br />
+            <p><strong>Read data from local storage:</strong></p>
+            <code>let lastname = localStorage.getItem(key);</code>
+          </article>
+        </section>
+      </section>
+
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
