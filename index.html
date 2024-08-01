@@ -22,12 +22,12 @@
     <link rel="stylesheet" href="./style.css" />
     <title>Technical Documentation Page | HTML and CSS</title>
   </head>
-  <body id="js-light-mode">
+  <body class="js-body">
     <!-- Navbar -->
 
     <nav id="navbar">
       <header class="title">
-        <a id="title" class="title-link" href="./index.html">
+        <a id="title" class="js-title title-link" href="./index.html">
           <h1>HTML, CSS, and JS</h1>
           <h1>Documentation</h1>
         </a>
@@ -45,25 +45,22 @@
           <a class="nav-link" href="./bookmarks.html">Bookmarks</a>
         </li>
       </ul>
-      <div class="light-mode-icon">
+      <div class="mode-icon-div">
         <img 
-          onclick="
-          lightMode();
-          "
           src="./images/brightness.png"
           alt="Brightness icon"
-          width="50" />
+          class="js-light-mode-icon mode-icon"/>
       </div>
     </nav>
 
     <!-- Main Document -->
 
     <main id="main-doc">
-      <section class="card">
+      <section class="card js-card">
         <!-- Section 1 -->
 
         <section class="main-section" id="Introduction">
-          <header class="main-header-section-title">
+          <header class="main-header-section-title js-section-title">
             <h1>Introduction</h1>
           </header>
           <article class="content-section">
