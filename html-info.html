@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon_io/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon_io/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="./favicon_io/site.webmanifest" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Technical Documentation Page | HTML and CSS</title>
+  </head>
+  <body id="js-light-mode">
+    <!-- Navbar -->
+
+    <nav id="navbar">
+      <header class="title">
+        <a id="title" class="title-link" href="./index.html">
+          <h1>HTML, CSS, and JS</h1>
+          <h1>Documentation</h1>
+        </a>
+      </header>
+      <ul class="list">
+        <li class="border">
+          <a class="nav-link" href="./index.html">Introduction</a>
+        </li>
+        <li class="border"><a class="nav-link" href="./html-info.html">HTML</a></li>
+        <li class="border"><a class="nav-link" href="./css-info.html">CSS</a></li>
+        <li class="border">
+          <a class="nav-link" href="./js-info.html">JavaScript</a>
+        </li>
+        <li class="border border-bottom">
+          <a class="nav-link" href="./bookmarks.html">Bookmarks</a>
+        </li>
+      </ul>
+      <div class="light-mode-icon">
+        <img 
+          onclick="
+          lightMode();
+          "
+          src="./images/brightness.png"
+          alt="Brightness icon"
+          width="50" />
+      </div>
+    </nav>
+
+    <!-- Main Document -->
+
+    <main id="main-doc">
+      <section class="card">
+
+        <!-- Section 1 -->
+
+        <section class="main-section" id="HTML">
+          <header class="main-header-section-title"><h1>HTML</h1></header>
+          <article class="content-section">
+            <code
+              >&lt;Start Tag Attribute = "Value"&gt;Content&lt;/End
+              Tag&gt;</code
+            >
+            <h3>Block-Level Semantic HTML Elements:</h3>
+            <code>&lt;header&gt;</code>
+            <p class="element-description">
+              Represents introductory content, such as navigational aids, logo,
+              search form, or author name.
+            </p>
+            <code>&lt;nav&gt;</code>
+            <p class="element-description">
+              Represents navigation links, such as menus, tables of contents,
+              and indexes.
+            </p>
+            <code>&lt;aside&gt;</code>
+            <p class="element-description">
+              Represents a portion of a document whose content is only
+              indirectly related to the document's main content. Asides are
+              frequently presented as sidebars or call-out boxes.
+            </p>
+            <code>&lt;main&gt;</code>
+            <p class="element-description">
+              Represents the dominant content of the body of a document. The
+              main content area consists of content that is directly related to
+              or expands upon the central topic of a document, or the central
+              functionality of an application.
+            </p>
+            <code>&lt;article&gt;</code>
+            <p class="element-description">
+              Intended to be independently distributable or resuable. Forum
+              post, magazine/newspaper article, blog entry, podcast card, and
+              widgets are some examples.
+            </p>
+            <code>&lt;section&gt;</code>
+            <p class="element-description">
+              Represents a generic standalone section of a document. Sections
+              should always have a heading.
+            </p>
+            <code>&lt;h1&gt;</code>
+            <code>&lt;h2&gt;</code>
+            <code>&lt;h3&gt;</code>
+            <code>&lt;h4&gt;</code>
+            <code>&lt;h5&gt;</code>
+            <code>&lt;h6&gt;</code>
+            <code>&lt;p&gt;</code>
+            <code>&lt;br&gt;</code>
+            <code>&lt;footer&gt;</code>
+
+            <br />
+
+            <h3>Inline Semantic HTML Elements:</h3>
+            <code>&lt;a&gt;</code>
+            <code>&lt;strong&gt;</code>
+            <code>&lt;em&gt;</code>
+            <code>&lt;code&gt;</code>
+            <code>&lt;small&gt;</code>
+            <code>&lt;q&gt;</code>
+            <code>&lt;label&gt;</code>
+            <code>&lt;input&gt;</code>
+            <code>&lt;img&gt;</code>
+            <code>&lt;i&gt;</code>
+            <code>&lt;br&gt;</code>
+            <code>&lt;b&gt;</code>
+
+            <br />
+            <h3>Non-Semantic HTML Elements:</h3>
+            <code>&lt;div&gt;</code>
+            <p class="element-description">Block-level element.</p>
+            <code>&lt;span&gt;</code>
+            <p class="element-description">Inline element.</p>
+          </article>
+        </section>
+      </section>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
