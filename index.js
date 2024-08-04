@@ -7,7 +7,10 @@ const htmlElements = {
   borderRight: document.getElementById("navbar"),
   button: document.querySelector(".mode-icon-div"),
   sectionTitle: document.querySelector(".js-section-title"),
+  codeBg: document.getElementsByTagName("code"),
 };
+
+console.log(htmlElements.codeBg);
 
 // Check for saved theme in localStorage and apply it
 document.addEventListener("DOMContentLoaded", () => {
@@ -36,6 +39,9 @@ function activateLightMode() {
   htmlElements.card.classList.add("card-light-mode");
   htmlElements.borderRight.classList.add("border-light-mode");
   htmlElements.sectionTitle.classList.add("title-light-mode");
+  Array.from(htmlElements.codeBg).forEach((element) => {
+    element.classList.add("code-light-mode");
+  });
 
   htmlElements.border.forEach((borderItem) => {
     borderItem.classList.add("border-light-mode");
@@ -63,6 +69,9 @@ function activateDarkMode() {
   htmlElements.card.classList.remove("card-light-mode");
   htmlElements.borderRight.classList.remove("border-light-mode");
   htmlElements.sectionTitle.classList.remove("title-light-mode");
+  Array.from(htmlElements.codeBg).forEach((element) => {
+    element.classList.remove("code-light-mode");
+  });
 
   htmlElements.border.forEach((borderItem) => {
     borderItem.classList.remove("border-light-mode");
